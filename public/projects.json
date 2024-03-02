@@ -1,0 +1,77 @@
+{
+    "projects":[
+        { 
+            "id":1,
+            "title":"Cafe House Project",
+            "description":"I built this project for user to easily have a coffee anytime and anywhere. I added analysis, addToCart, profile, authencation and Subscriber features for user.I also checked authoriztion in authencation",
+            "skills":["Laravel","TailwindCss","Fontawesome Icon"],
+            "photo":"/projectsPhoto/cafehouse.png",
+            "alt":"cafehouse.png",
+            "photos":[
+                "/projectsPhoto/cafehouse2.png",
+                "/projectsPhoto/cafehouse3.png",
+                "/projectsPhoto/cafehouse4.png",
+                "/projectsPhoto/cafehouse5.png",
+                "/projectsPhoto/cafehouse6.png",
+                "/projectsPhoto/cafehouse7.png",
+                "/projectsPhoto/cafehouse8.png",
+                "/projectsPhoto/cafehouse9.png",
+                "/projectsPhoto/cafehouse10.png",
+                "/projectsPhoto/cafehouse11.png",
+                "/projectsPhoto/cafehouse12.png",
+                "/projectsPhoto/cafehouse13.png"
+            ]
+        },
+        { 
+            "id":2,
+            "title":"Rebuilt Hackathon Project By Myself",
+            "description":"We built this project for company to communicate each department easily and also user can buy products on online. I added addToCart, Checkout, Map and Department features. Departments are Sales, Logistics, Factory, Warehouse and Admin. Each department can do it's own work.I used authencation for breeze.",
+            "skills":["Laravel","VueJs","Inertia","TailwindCss","Fontawesome Icon"],
+            "photo":"/projectsPhoto/hackathon.png",
+            "alt":"hackathon.png",
+            "photos":[
+                "/projectsPhoto/hackathon2.png",
+                "/projectsPhoto/hackathon3.png",
+                "/projectsPhoto/hackathon4.png",
+                "/projectsPhoto/hackathon5.png",
+                "/projectsPhoto/hackathon6.png",
+                "/projectsPhoto/hackathon7.png"
+            ]
+        },
+        { 
+            "id":3,
+            "title":"Ecommerce Webiste Project With Vue",
+            "description":"I built this project for improving my Vue skill and how to create a ecommerce website using it. I added comment, category, authencation and admin features. I also checked authoriztion in comments and authencation",
+            "skills":["VueJs","TailwindCss","Fontawesome Icon"],
+            "photo":"/projectsPhoto/springshop1.png",
+            "photos":[
+                "/projectsPhoto/springshop2.png",
+                "/projectsPhoto/springshop3.png",
+                "/projectsPhoto/springshop4.png",
+                "/projectsPhoto/springshop5.png",
+                "/projectsPhoto/springshop6.png",
+                "/projectsPhoto/springshop7.png",
+                "/projectsPhoto/springshop8.png"
+            ],
+            "alt":"springshop.png"
+        },
+        { 
+            "id":4,
+            "title":"Ecommerce Webiste Project With Laravel",
+            "description":"I built this project for improving my Laravel skill and how to create a ecommerce website using laravel. I used database for mysql. I added subscriber, category, comments, profile, authencation and admin features. I also checked authoriztion in comments and authencation",
+            "skills":["Laravel","TailwindCss","Fontawesome Icon"],
+            "photo":"/projectsPhoto/ecommerce1.png",
+            "photos":[
+                "/projectsPhoto/ecommerce2.png",
+                "/projectsPhoto/ecommerce3.png",
+                "/projectsPhoto/ecommerce4.png",
+                "/projectsPhoto/ecommerce5.png",
+                "/projectsPhoto/ecommerce6.png",
+                "/projectsPhoto/ecommerce7.png",
+                "/projectsPhoto/ecommerce8.png",
+                "/projectsPhoto/ecommerce9.png"
+            ],
+            "alt":"ecommerce.png"
+        }
+    ]
+}
