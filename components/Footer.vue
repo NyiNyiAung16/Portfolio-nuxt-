@@ -13,24 +13,24 @@ const years = ref(null);
 <template>
     <section class="footer py-3" id="contact"> <!-- bg-secondary-->
         <div class="row m-0">
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12  mt-sm-2 logo">
                 <div class="d-flex align-items-center gap-2">
                     <img src="/photos/myimage.jpg" alt="footerimg" width="50" class="rounded">
                     <h5 class="fw-bold text-light">NyiNyiAung</h5>
                 </div>
                 <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut facere maiores ducimus saepe fugiat porro!</p>
             </div>
-            <div class="col-4">
-                <div class="d-inline-flex flex-column gap-2">
+            <div class="col-lg-4  col-md-6 col-sm-6 col-12 mt-sm-2">
+                <div class="d-inline-flex flex-column gap-">
                     <NuxtLink to="/" class="links">Home</NuxtLink>
                     <NuxtLink to="/projects" class="links">Projects</NuxtLink>
                     <a href="#skills" class="links">Skills</a>
                     <a href="#resume" class="links">Resume</a>
                 </div>
             </div>      
-            <div class="col-4"> 
+            <div class="col-lg-4  col-md-6 col-sm-6 col-12 mt-2 mt-md-0"> 
                 <h3 class=" text-light fw-bold" style="text-decoration: underline;">Contact</h3>
-                <div class="d-flex flex-column gap-2">
+                <div class="d-flex flex-column gap-2 flex-wrap">
                     <a href="mailto:nyinyiaung200316@gmail.com" class="contactLinks">Email : nyinyiaung200316@gmail.com</a>
                     <a href="tel:09454983106" class="contactLinks">PhoneNo : 09454983106</a>
                 </div>
@@ -39,4 +39,3 @@ const years = ref(null);
         <p class="text-center copyright m-0 mt-3">Copy Right &copy; <span ref="years"></span> by NyiNyiAung</p>
     </section>
 </template>
-

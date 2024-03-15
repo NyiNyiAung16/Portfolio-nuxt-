@@ -68,7 +68,6 @@ header{
 }
 
 .banner{
-    width: 100vw;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -90,6 +89,7 @@ header{
     position: absolute;
     right: 0;
     top: 100px;
+    z-index: 4;
     padding-right: 20px;
 }
 .banner .iconsContainer .icon i{
@@ -153,6 +153,14 @@ header{
     animation: slide 10s steps(2) infinite;
 }
 
+.vector2{
+    max-height: 400px;
+    position: absolute;
+    right: -20px;
+    top: -60px;
+    z-index: -1;
+}
+
 @keyframes slide {
     100%{
         top: -150px;
@@ -196,9 +204,9 @@ header{
 .about .aboutImg img{
     display: block;
     margin: auto;
-    max-width: 200px;
+    max-width: 260px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -293,7 +301,10 @@ header{
 /* End Skills style */
 
 
-/* Start Icons Section */
+/* Start Slide Icons Section */
+.playIconsMain{
+    overflow: hidden;
+}
 
 .playIconsMain i{
     font-size: 3rem;
@@ -304,7 +315,7 @@ header{
     margin-right: 0;
 }
 
-/* End Icons Section */
+/* End Slide Icons Section */
 
 
 
@@ -434,6 +445,7 @@ header{
 
 .footer{
     background-color: var(--base-bg);
+    overflow: hidden;
 }
 
 .footer .links,.footer .contactLinks,.footer .copyright {
@@ -446,6 +458,10 @@ header{
 .footer .links:hover{
     text-decoration: underline;
     transform: translateX(6px);
+}
+
+.footer .contactLinks{
+    display: inline-block;
 }
 
 /* End Contact style */
@@ -484,10 +500,18 @@ header{
 /* mobile  */
 @media (max-width:480px) {
 
-    .banner .bannerLeft img{
-        max-width: 260px;
-        min-height: 280px;
+    .banner .bannerLeft{
+        max-width: 270px;
+        max-height: 250px;
+        margin: 0 auto;
     }
+
+    .banner .bannerRight{
+        margin: 0 auto;
+        justify-content: start;
+        align-items: center;
+    }
+
     .banner .bannerRight .animate-text{
         font-size: 1.7rem;
         color: #fff;
@@ -499,21 +523,10 @@ header{
             top: -100px;
         }
     }
-    .bannerRight .fixedText,.banner .bannerRight .static-text{
-        color: #fff;
-    }
 
     .banner .bannerRight .dynamic-text{
         height: 50px;
         line-height: 50px;
-    }
-
-    .banner .bannerRight .dynamic-text li span{
-        color: rgb(0, 255, 98);
-    }
-
-    .banner .bannerRight .dynamic-text li span::after{
-        background-color: blue;
     }
 
     .banner::before,.banner::after{
@@ -523,6 +536,21 @@ header{
         top: -1900px;
     }
 
+    /* banner vector */
+    .vector2{
+       display: none;
+   }
+   
+   .banner .iconsContainer{
+       display: flex;
+       justify-content: center;
+       gap: 10%;
+       top: 44%;
+       left: 0%;
+       right: 0;
+       writing-mode:horizontal-tb;
+       padding: 0;
+   }
     /* about style */
     .about .aboutImg{
         padding-bottom: 20px;
@@ -543,17 +571,12 @@ header{
 
     /* contact style */
     .contactLinks{
-        max-width: 500px;
+        min-width: 500px;
+        font-size: 1rem;
         flex-direction: column;
         gap: 10px;
-        margin: 0 10px;
     }
 
-     /* about section style */
-     .about .aboutImg img{
-        max-width: 260px;
-        min-height: 280px;
-    }
 }
 
 
@@ -561,26 +584,38 @@ header{
 /* Extra small devices */
 @media (min-width:481px) and (max-width:767px) {
 
+    .banner .bannerLeft{
+        max-width: 270px;
+        max-height: 250px;
+        margin: 0 auto;
+    }
+
     .banner .bannerLeft img{
-        max-width: 280px;
-        min-height: 300px;
+        width: 100%;
+        height: 100%;
         margin: auto;
     }
 
     .banner .bannerRight{
-        margin: auto;
+        margin: 0 auto;
+        justify-content: start;
+        align-items: center;
     }
 
-    .bannerRight .fixedText,.banner .bannerRight .static-text{
+    .banner .bannerRight .animate-text{
+        font-size: 2.5rem;
         color: #fff;
+        align-items: center;
+    }
+    @keyframes slide {
+        100%{
+            top: -100px;
+        }
     }
 
-    .banner .bannerRight .dynamic-text li span{
-        color: rgb(0, 255, 98);
-    }
-
-    .banner .bannerRight .dynamic-text li span::after{
-        background-color: blue;
+    .banner .bannerRight .dynamic-text{
+        height: 50px;
+        line-height: 50px;
     }
 
     .banner::before,.banner::after{
@@ -592,10 +627,7 @@ header{
 
     /* about style */
     .about .aboutImg{
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        margin: auto;
+        display: none;
     }
 
     .about .aboutContent{
@@ -604,14 +636,29 @@ header{
 
     /* contact style */
     .contactLinks{
-        max-width: 600px;
-        margin: 0 10px;
+        min-width: 600px;
     }
 
     /* about section style */
     .about .aboutImg img{
         max-width: 260px;
         min-height: 280px;
+    }
+
+    /* banner vector */
+    .vector2{
+        display: none;
+    }
+    
+    .banner .iconsContainer{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        top: 44%;
+        left: 0%;
+        right: 0;
+        writing-mode:horizontal-tb;
+        padding: 0;
     }
 }
 
@@ -657,13 +704,18 @@ header{
 
     /* contact style */
     .contactLinks{
-        max-width: 600px;
+        min-width: 600px;
     }
 
     /* about section style */
     .about .aboutImg img{
         max-width: 280px;
         min-height: 300px;
+    }
+
+    /* banner vector */
+    .vector2{
+        right: -42px;
     }
 }
 

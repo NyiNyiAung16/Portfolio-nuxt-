@@ -13,7 +13,7 @@ function download(e){
         <div class="container row m-0 mx-auto mt-3">
             <div class="col-lg-4 mb-3 resumeleft">
                 <div class="d-flex flex-column align-items-center justify-content-center">
-                    <img src="/photos/3.jpg" alt="resumeimg" class="resumeImg">
+                    <img src="/photos/resumePhoto.jpg" alt="resumeimg" class="resumeImg">
                     <div class="mt-3">
                         <h3>FullStack Junior <br/> Web Developer</h3>
                     </div>
@@ -79,3 +79,7 @@ function download(e){
         </div>
     </section>
 </template>
+
+<style scoped>
+
+</style>

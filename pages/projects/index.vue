@@ -19,8 +19,12 @@ onMounted(async()=>{
         <Title>My Portfolio | Projects</Title>
     </Head>
     <div class="container-fluid mt-5">   
-        <div class="row">
-            <div class="col-3" v-for="project in projects" :key="project.id">
+        <div class="row justify-content-center">
+            <div 
+                class="col-3"
+                v-for="project in projects" :key="project.id"
+                style="min-width: 400px;"
+            >
                 <div class="card mb-3">
                     <img :src="project.photo" :alt="project.alt" class="card-img-top image">
                     <div class="card-content mt-2 p-2">
@@ -39,4 +43,5 @@ onMounted(async()=>{
     max-height: 270px;
     object-fit: cover;
 }
+
 </style>

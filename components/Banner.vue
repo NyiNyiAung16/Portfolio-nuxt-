@@ -37,15 +37,3 @@
         <img src="./../assets/photo/Vector.png" alt="wavepng" class="w-full waves">
     </div>
 </template>
-
-<style scoped>
-.vector2{
-    max-height: 400px;
-    position: absolute;
-    right: -20px;
-    top: -60px;
-    z-index: -2;
-}
-
-
-</style>

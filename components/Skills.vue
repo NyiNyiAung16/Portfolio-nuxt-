@@ -18,7 +18,7 @@
         <div>
             <h2 class="text-center fs-1 skillCaption">Skills</h2>
             <div class="container row justify-content-center gap-3 mx-auto iconContainer">
-                <div class="col-lg-5 d-flex gap- skillIcon">
+                <div class="col-lg-5 d-flex skillIcon">
                     <div class="icon">
                         <i class="fab fa-laravel Laravel"></i>
                         <span>Laravel</span>

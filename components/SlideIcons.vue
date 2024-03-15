@@ -23,6 +23,7 @@
 <style scoped>
 .running{
     display: inline-block;
+    overflow: hidden;
     animation: run 20s linear infinite;
 }
 

@@ -25,16 +25,18 @@ const switchTheme = (name) => {
         document.documentElement.style.setProperty('--thick-bg','#222');
         document.documentElement.style.setProperty('--animate-color','#000');
         document.documentElement.style.setProperty('--base-color','rgba(255,255,255,.8)');
-        document.documentElement.style.setProperty('--banner-icon-color','#fff');
-        document.documentElement.style.setProperty('--banner-icon-hover-color','#f5f5f5');
+        document.documentElement.style.setProperty('--banner-icon-color','#222');
+        document.documentElement.style.setProperty('--banner-icon-hover-color','#333');
         document.documentElement.style.setProperty('--wave-opacity','.8');
     }
 }
 
 let toggleClass = computed(()=>({
-    'd-none' : route.fullPath !== '/',
-    'd-block' : route.fullPath === '/'
+    'd-none' : route.path !== '/',
+    'd-block' : route.path === '/'
 }))
+
+console.log(route)
 
 </script>
 
